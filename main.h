@@ -4,11 +4,17 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
+/**
+* struct Formatter -  structure for symbol and handler
+*
+* @symbol: specifier
+* @handler: matching function
+*/
 
 struct Formatter
 {
-    char *symbol;
-    int (*handler)(va_list);
+	char *symbol;
+	int (*handler)(va_list);
 };
 
 typedef struct Formatter F_Handler;
@@ -25,4 +31,3 @@ int p_string(va_list list);
 int p_percent(__attribute__((unused)) va_list list);
 
 #endif
-
