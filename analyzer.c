@@ -34,11 +34,12 @@ int analyzer(const char *format, F_Handler funcs_list[], va_list args_list)
 				prntd_chars += format[i + 1] ?
 					(_output_char(format[i]), _output_char(format[i + 1]), 2) : -1;
 			}
-			i++;
+			i = i  + 1;
 		}
 		else
 		{
-			prntd_chars += _output_char(format[i]), 1;
+			_output_char(format[i]);
+			prntd_chars++;
 		}
 	}
 
