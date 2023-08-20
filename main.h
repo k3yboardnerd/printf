@@ -22,7 +22,7 @@ int _output_char(char c);
 
 int p_char(va_list list);
 int p_string(va_list list);
-int p_percent(attribute((unused)) va_list list);
+int p_percent(__attribute__((unused)) va_list list);
 
 #endif
 
