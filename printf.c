@@ -17,7 +17,8 @@ int _printf(const char *format, ...)
 	F_Handler funcs_list[] = {
 		{"c", p_char},
 		{"s", p_string},
-		{"%", p_percent}
+		{"%", p_percent},
+		{NULL, NULL}
 	};
 
 	va_list args_list;
