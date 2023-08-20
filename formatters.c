@@ -41,7 +41,7 @@ int p_string(va_list list)
  * @list: list of args
  * Return: the % as output
  */
-int p_percent(attribute((unused)) va_list list)
+int p_percent(__attribute__((unused)) va_list list)
 {
 	_output_char('%');
 	return (1);
