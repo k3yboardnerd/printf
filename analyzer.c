@@ -31,8 +31,9 @@ int analyzer(const char *format, F_Handler funcs_list[], va_list args_list)
 			}
 			if (!funcs_list[j].symbol && format[i + 1] != ' ')
 			{
-				prntd_chars += format[i + 1] ?
-					(_output_char(format[i]), _output_char(format[i + 1]), 2) : -1;
+				format[i + 1] != '\0' ?
+					(_output_char(format[i]), _output_char(format[i + 1]),
+					 prntd_chars += 2) : (-1);
 			}
 			i = i  + 1;
 		}
