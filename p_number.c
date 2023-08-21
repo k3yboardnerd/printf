@@ -33,3 +33,32 @@ int p_integer(va_list args)
 
 	return (lnght);
 }
+
+/**
+ * p_uns_num - Print unsigned number
+ * @n: unsigned int
+ * Return: total nums
+ */
+int p_uns_num(unsigned int n)
+{
+	int d;
+	int lngth;
+	unsigned int nmbrs;
+
+	d = 1;
+	lngth = 0;
+
+	nmbrs = n;
+
+	for (; nmbrs / d > 9; )
+		d *= 10;
+
+	for (; d != 0; )
+	{
+		lngth += _output_char('0' + nmbrs / d);
+		nmbrs %= d;
+		d /= 10;
+	}
+
+	return (lngth);
+}
