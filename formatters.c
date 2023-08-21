@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * p_char - Print char
  * @list: list of args
@@ -54,14 +53,14 @@ int p_percent(__attribute__((unused)) va_list list)
  */
 int uns_int(va_list list)
 {
-  unsigned int numb;
+	unsigned int numb;
 
-  numb = va_arg(list, unsigned int);
+	numb = va_arg(list, unsigned int);
 
-  if (numb == 0)
-    return (p_uns_num(numb));
+	if (numb == 0)
+		return (p_uns_num(numb));
 
-  if (numb < 1)
-    return (-1);
-  return (p_uns_num(numb));
+	if (numb < 1)
+		return (-1);
+	return (p_uns_num(numb));
 }
