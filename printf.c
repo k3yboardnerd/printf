@@ -21,6 +21,7 @@ int _printf(const char *format, ...)
 		{"d", p_integer},
 		{"i", p_integer},
 		{"b", p_bin},
+		{"u", p_uns_num},
 		{NULL, NULL}
 	};
 
