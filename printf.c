@@ -22,6 +22,9 @@ int _printf(const char *format, ...)
 		{"i", p_integer},
 		{"b", p_bin},
 		{"u", p_uns_num},
+		{"o", p_octal},
+		{"x", p_HEX},
+		{"X", p_HEX},
 		{NULL, NULL}
 	};
 
