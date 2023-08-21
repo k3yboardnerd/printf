@@ -46,3 +46,22 @@ int p_percent(__attribute__((unused)) va_list list)
 	_output_char('%');
 	return (1);
 }
+
+/**
+ * uns_int - print Unsigned integer value
+ * @list: List of args
+ * Return: numbers that counted
+ */
+int uns_int(va_list list)
+{
+  unsigned int numb;
+
+  numb = va_arg(list, unsigned int);
+
+  if (numb == 0)
+    return (p_uns_num(num));
+
+  if (numb < 1)
+    return (-1);
+  return (p_uns_num(numb));
+}
