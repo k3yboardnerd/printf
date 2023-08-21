@@ -17,7 +17,7 @@ int p_octal(va_list list)
 		return (_output_char('0'));
 	if (numb < 1)
 		return (-1);
-	len = base_len(numb, 8);
+	len = b_length(numb, 8);
 
 	octal_rprsnt = malloc(sizeof(char) * len + 1);
 	if (octal_rprsnt == NULL)
@@ -35,7 +35,7 @@ int p_octal(va_list list)
 
 	output_base(r_strng);
 	free(octal_rprsnt);
-	free(rev_str);
+	free(r_strng);
 	return (len);
 }
 
@@ -61,7 +61,7 @@ int p_HEX(va_list list)
 		return (_output_char('0'));
 	if (numb < 1)
 		return (-1);
-	lnght = base_lenght(numb, 16);
+	lnght = b_lenght(numb, 16);
 	hex_rprsnt = malloc(sizeof(char) * lnght + 1);
 	if (hex_rprsnt == NULL)
 		return (-1);
