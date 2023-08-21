@@ -13,7 +13,7 @@ int p_bin(va_list list)
 
 	numbr = va_arg(list, unsigned int);
 	if (numbr == 0)
-		return (_write_char('0'));
+		return (_output_char('0'));
 	if (numbr < 1)
 		return (-1);
 	lngth = b_length(numbr, 2);
