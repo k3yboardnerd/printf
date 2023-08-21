@@ -30,5 +30,6 @@ int p_char(va_list list);
 int p_string(va_list list);
 int p_percent(__attribute__((unused)) va_list list);
 int p_integer(va_list args);
+int p_uns_num(unsigned int n);
 
 #endif
