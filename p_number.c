@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * p_number - print numbers to the function
+ * p_integer - print numbers to the function
  * @args: List of args
  * Return: The number of args
  */
-int p_number(va_list args)
+int p_integer(va_list args)
 {
 	int n_arg;
 	int d, lnght;
