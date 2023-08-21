@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 		{"d", p_integer},
 		{"i", p_integer},
 		{"b", p_bin},
-		{"u", p_uns_num},
+		{"u", uns_int},
 		{"o", p_octal},
 		{"x", p_HEX},
 		{"X", p_HEX},
