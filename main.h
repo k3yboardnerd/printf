@@ -34,5 +34,5 @@ char *rev_str(char *s);
 void output_base(char *str);
 char *_memocpy(char *d, char *src, unsigned int n);
 int p_bin(va_list list);
-
+int p_uns_num(unsigned int n);
 #endif
