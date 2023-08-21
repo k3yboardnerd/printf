@@ -59,7 +59,7 @@ int uns_int(va_list list)
   numb = va_arg(list, unsigned int);
 
   if (numb == 0)
-    return (p_uns_num(num));
+    return (p_uns_num(numb));
 
   if (numb < 1)
     return (-1);
