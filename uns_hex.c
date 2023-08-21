@@ -61,7 +61,7 @@ int p_HEX(va_list list)
 		return (_output_char('0'));
 	if (numb < 1)
 		return (-1);
-	lnght = b_lenght(numb, 16);
+	lnght = b_length(numb, 16);
 	hex_rprsnt = malloc(sizeof(char) * lnght + 1);
 	if (hex_rprsnt == NULL)
 		return (-1);
