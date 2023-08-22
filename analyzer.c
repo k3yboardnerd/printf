@@ -14,11 +14,11 @@ int analyzer(const char *format, F_Handler funcs_list[], va_list args_list)
 
 	prntd_chars = 0;
 
-	for (i = 0; format[i]; i++)
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
 		{
-			for (j = 0; funcs_list[j].symbol; j++)
+			for (j = 0; funcs_list[j].symbol != NULL; j++)
 			{
 				if (format[i + 1] == funcs_list[j].symbol[0])
 				{
